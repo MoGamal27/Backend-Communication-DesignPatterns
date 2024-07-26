@@ -19,7 +19,7 @@ const sendEmail = (userData: UserData): void => {
           });
 
      transporter.sendMail({
-        from: 'Event-Driven <J5lqz@example.com>',
+        from: 'process.env.EMAIL_USER',
         to: userData.email,
         subject: 'Welcome',
         text: `Welcome ${userData.name}!, Thank you for registering with us.`,
